@@ -1,11 +1,10 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        bodyFont: ["Poppins", "sans-serif"],
-        titleFont: ["Montserrat", "sans-serif"],
+        bodyFont: ["Darker Grotesque", "sans-serif"],
+        titleFont: ["Inter", "sans-serif"],
       },
       screens: {
         xs: "320px",
@@ -18,10 +17,11 @@ export default {
         xl: "1280px",
       },
       colors: {
-        bodyColor: "#0B1120",
+        bodyColor: "#00091f",
         lightText: "#c4cfde",
-        boxBg: "linear-gradient(145deg, #1e2024, #23272b)",
-        designColor: "#ff014f",
+        boxBg: "linear-gradient(145deg, #626d78 12.53%, #041A6F 101.69%)",
+        designColor: "#88F0E5",
+        skyblue: "#88F0E5", // Custom skyblue color
       },
       boxShadow: {
         shadowOne: "10px 10px 19px #030712, -10px -10px 19px #0f172a",

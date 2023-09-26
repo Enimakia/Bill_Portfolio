@@ -1,5 +1,5 @@
-import { BsGithub } from "react-icons/bs";
-import { FaYoutube } from "react-icons/fa";
+// import { BsGithub } from "react-icons/bs";
+// import { FaYoutube } from "react-icons/fa";
 
 interface Props {
   title: string;
@@ -23,7 +23,7 @@ const ProjectsCard = ({ title, des, src }: Props) => {
             <h3 className="text-base uppercase text-designColor font-normal">
               {title}
             </h3>
-            <div className="flex gap-2">
+            {/* <div className="flex gap-2">
               <a href="https://github.com/noorjsdivs" target="_blank">
                 <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
                   <BsGithub />
@@ -34,7 +34,7 @@ const ProjectsCard = ({ title, des, src }: Props) => {
                   <FaYoutube />
                 </span>
               </a>
-            </div>
+            </div> */}
           </div>
           <p className="text-sm tracking-wide mt-3 hover:text-gray-100 duration-300">
             {des}

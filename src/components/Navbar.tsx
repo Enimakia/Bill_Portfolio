@@ -2,17 +2,22 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { FaFacebookF, FaYoutube, FaLinkedinIn } from "react-icons/fa";
-import { logo } from "../assets";
+import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+// import { logo } from "../assets";
 import { navLinksdata } from "../constants";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <div className="w-full h-24 sticky top-0 z-50 backdrop-blur-2xl transition-colors bg-bodyColor/70 mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 px-4">
-      <div>
-        <img src={logo} alt="logo" />
-      </div>
+      <a href="/">
+        <div>
+          <span className="text-3xl font-bold text-skyblue">BILL</span>
+          <span>
+            <span className="text-3xl font-bold"> AGHA</span>
+          </span>
+        </div>
+      </a>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
           {navLinksdata.map(({ _id, title, link }) => (
@@ -43,12 +48,19 @@ const Navbar = () => {
           <div className="w-[80%] h-screen mdl:hidden overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
-                <img className="w-32" src={logo} alt="logo" />
-                <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
-                </p>
+                <a href="/">
+                  <div>
+                    <span className="text-3xl font-bold text-skyblue">
+                      BILL
+                    </span>
+                    <span>
+                      <span className="text-3xl font-bold"> AGHA</span>
+                    </span>
+                  </div>
+                </a>
+                {/* <p className="text-sm text-gray-400 mt-2">
+                I am a Professional Project Manager with a passion for delivering successful projects. With strong organizational and leadership skills, I excel at overseeing project lifecycles from initiation to completion. My expertise lies in collaborating with teams, stakeholders, and clients to define goals, create plans, and ensure timely delivery within budget. I am dedicated to driving results, fostering teamwork, and adapting to evolving project requirements. Let's work together to achieve project success.
+                </p> */}
               </div>
               <ul className="flex flex-col gap-4">
                 {navLinksdata.map((item) => (
@@ -72,26 +84,20 @@ const Navbar = () => {
               </ul>
               <div className="flex flex-col gap-4">
                 <h2 className="text-base uppercase font-titleFont mb-4">
-                  Find me in
+                  Find me on
                 </h2>
                 <div className="flex gap-4">
-                  <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+                  <a href="#" target="_blank">
                     <span className="bannerIcon">
-                      <FaYoutube />
+                      <FaTwitter />
                     </span>
                   </a>
-                  <a
-                    href="https://www.linkedin.com/in/noor-mohammad-ab2245193/"
-                    target="_blank"
-                  >
+                  <a href="#" target="_blank">
                     <span className="bannerIcon">
                       <FaLinkedinIn />
                     </span>
                   </a>
-                  <a
-                    href="https://www.facebook.com/Noorlalu143/"
-                    target="_blank"
-                  >
+                  <a href="#" target="_blank">
                     <span className="bannerIcon">
                       <FaFacebookF />
                     </span>

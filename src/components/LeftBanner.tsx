@@ -1,11 +1,22 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaFacebookF, FaYoutube, FaLinkedinIn, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaBullhorn,
+} from "react-icons/fa";
+import { SiFigma, SiAdobephotoshop } from "react-icons/si";
+import { RiCodeLine } from "react-icons/ri";
 import { FadeIn } from "./FadeIn";
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
-    words: ["Professional Coder.", "Full Stack Developer.", "UI Designer."],
+    words: [
+      "Professional Project Manager",
+      "Graphic Designing",
+      "Digital marketer",
+      "Digital marketer",
+    ],
     loop: true,
     typeSpeed: 20,
     deleteSpeed: 10,
@@ -16,38 +27,44 @@ const LeftBanner = () => {
       <div className="flex flex-col gap-5">
         <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4>
         <h1 className="text-6xl font-bold text-white">
-          Hi, I'm <span className="text-designColor capitalize">John doe</span>
+          Hi, I'm{" "}
+          <span className="text-designColor capitalize">Bill N. Agha</span>
         </h1>
         <h2 className="text-4xl font-bold text-white">
           a <span>{text}</span>
-          <Cursor cursorStyle="|" cursorColor="#ff014f" />
+          <Cursor cursorStyle="..." cursorColor="#97F2E8" />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wider">
-          I use animation as a third dimension by which to simplify experiences
-          and kuiding thro each and every interaction. I'm not adding motion
-          just to spruce things up, but doing it in ways that.
+          As the President of TiC Foundation, I am responsible for leading and
+          managing the organization's vision of inspiring and empowering the
+          next generation of tech entrepreneurs and leaders. I oversee various
+          programs, including the TiC Bootcamp, TiC Summit, TiC Start-up
+          accelerator program, TiC Hackathon, and TiC HuB. These programs have
+          trained and inspired 2000+ students and startup founders, provided
+          cash funding to young entrepreneurs, and created a collaborative space
+          for technology talent, creatives, and startups. I ensure the
+          foundation's initiatives have a positive and sustainable impact by
+          overseeing strategic direction, day-to-day operations, engaging
+          stakeholders, fostering partnerships, and advocating for the cause.
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">
-            Find me in
+            Find me on
           </h2>
           <div className="flex gap-4">
-            <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+            <a href="#" target="_blank">
               <span className="bannerIcon">
-                <FaYoutube />
+                <FaTwitter />
               </span>
             </a>
-            <a
-              href="https://www.linkedin.com/in/noor-mohammad-ab2245193/"
-              target="_blank"
-            >
+            <a href="#" target="_blank">
               <span className="bannerIcon">
                 <FaLinkedinIn />
               </span>
             </a>
-            <a href="https://www.facebook.com/Noorlalu143/" target="_blank">
+            <a href="#" target="_blank">
               <span className="bannerIcon">
                 <FaFacebookF />
               </span>
@@ -60,13 +77,13 @@ const LeftBanner = () => {
           </h2>
           <div className="flex gap-4">
             <span className="bannerIcon">
-              <FaReact />
+              <RiCodeLine />
             </span>
             <span className="bannerIcon">
-              <SiNextdotjs />
+              <FaBullhorn />
             </span>
             <span className="bannerIcon">
-              <SiTailwindcss />
+              <SiAdobephotoshop />
             </span>
             <span className="bannerIcon">
               <SiFigma />
